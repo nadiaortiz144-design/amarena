@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/* =================== HEADER =================== */
+header {
+    background-color: #f7d9e0;
+    padding: 10px 20px;
+}
+
+.header-container {
+    display: flex;
+	padding:45px;
+    justify-content: center;
+    flex-wrap: nowrap; /* evita que salten a la siguiente línea */
+	font-family: 'Dancing Script', cursive !important;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	border-radius: 5px;
+}
+header h1 {
+    margin: 0;
+    font-size: 50px;
+	border-radius: 5px;
+    color: #333;
+}
+h1{
+	  margin: 0;
+    font-size: 50px;
+	border-radius: 5px;
+    color: #333;
+
+}
+/*body*/
+body{
+	font-size: 20px;
+	background-color: #857331;
+	margin: 0;
+	padding: 30px;
+}
+
+/* NAVEGACIÓN */
+
+/* Menú horizontal */
+nav {
+	font-family: 'Arial', sans-serif;
+    list-style: none;
+	align-content: center;
+    display: flex;
+    gap: 0;
+    margin: 0;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 3px;
+	border-color: #2e2020;
+	justify-content: space-between; /* Distribuye los <li> por todo el ancho */
+    width: 100%;             /* Ocupa todo el header */
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f7d9e0;
+}
+
+.menu li{
+	flex:1;
+}
+.menu li a {
+     display: flex;            /* Para centrar texto */
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;          /* Altura del botón */
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+	transition: 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #e63946;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+/* =================== PRODUCTOS =================== */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(12, 12, 12, 0.1);
+    width: 250px;
+    text-align: center;
+    padding: 15px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.card h3 {
+    margin: 10px 0 5px;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #555;
+}
+/* BOTONES */
+.bt {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 5px;
+    background-color: #e63946;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+	align-items: center;
+}
+
+.bt:hover {
+    background-color: #d62839;
+}
+
+.bt-eliminar {
+    background-color: #ff4d4d;
+	padding: 8px 15px;
+    margin: 5px;
+	text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold
+}
+
+.bt-eliminar:hover {
+    background-color: #cc0000;
+}
+.btn {
+
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    background-color: #e63946;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #d62839;
+}
+/* TABLA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f7d9e0;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* FORMULARIO DE BÚSQUEDA */
+#form1 {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+#buscar {
+    flex: 1;
+    padding: 5px 10px;
+}
+.content{
+	font-family: 'Arial';
+	font-size: 20px;
+	align-items: center;
+	text-align: center;
+}
+/* =================== RESPONSIVE =================== */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        background-color: #f7d9e0;
+    }
+    .menu.active {
+        display: flex;
+    }
+    .menu li {
+        margin: 10px 0;
+    }
+    .menu-toggle {
+        display: block;
+    }
+
+    .productos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+label{
+    font-weight: bold;
+    color: #0f0f0f;
+    font-size: 16px;
+    margin-top: 10px;
+	display: inline-block;
+    width: 120px;
+    font-weight: bold;
+	padding: 5px;
+}
+.form-container{
+    background: #f7d9e0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    flex: 1 1 300px; /* Cada formulario ocupa mínimo 300px y se adapta al ancho */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+.form-container h3 {
+    margin-top: 0;
+}
