@@ -13,5 +13,5 @@ Es un sistema web para gestionar facturas, clientes y productos, proveedores, en
 - Crear, modificar, actualizar facturas
 - Mostrar, crear, eliminar o desactivar productos
 - Gestión de clientes, proveedores
-Capturas del sistema
+## Capturas del sistema
   ![Inicio] (img/inicio.png)
